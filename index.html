@@ -158,8 +158,8 @@
 	var counter=0;
 	var url = document.URL.substr(0,document.URL.lastIndexOf('/'));
 	
-	document.getElementById("shareLink").href= url+"/overlay?room="+roomID;
-	document.getElementById("shareLink").innerHTML = url+"/overlay?room="+roomID;
+	document.getElementById("shareLink").href= url+"/overlay.html?room="+roomID;
+	document.getElementById("shareLink").innerHTML = url+"/overlay.html?room="+roomID;
 
 	navigator.clipboard.writeText(url+"/textout?room="+roomID).then(() => {
       /* clipboard successfully set */
